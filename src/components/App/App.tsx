@@ -45,7 +45,7 @@ const App = () => {
 
   return (
     <div className={css.App}>
-      <SearchBar onSearch={handleSearch} />
+      <SearchBar onSubmit={handleSearch} />
       <MovieGrid movies={movies} onSelect={handleMovieSelect} />
       {selectedMovie && (
         <MovieModal movie={selectedMovie} onClose={handleModalClose} />
